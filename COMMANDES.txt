@@ -1,0 +1,85 @@
+═══════════════════════════════════════════════════════════════
+     COMMANDES À TAPER - Google Ads MCP pour Claude Desktop
+═══════════════════════════════════════════════════════════════
+
+📌 TU ES ICI: /home/user/lezardoloris
+
+───────────────────────────────────────────────────────────────
+ÉTAPE 1: Installation des dépendances
+───────────────────────────────────────────────────────────────
+
+npm install
+
+⏱️  Attends 1-2 minutes que ça s'installe...
+
+───────────────────────────────────────────────────────────────
+ÉTAPE 2: Configuration Google Ads (AVANT, va chercher tes 3 credentials)
+───────────────────────────────────────────────────────────────
+
+Ouvre dans ton navigateur:
+   👉 https://console.cloud.google.com
+
+Suis les étapes dans GUIDE-FRANCAIS.md pour obtenir:
+   1. CLIENT_ID
+   2. CLIENT_SECRET
+   3. DEVELOPER_TOKEN
+
+Puis lance:
+
+npm run setup:auth
+
+→ Colle tes 3 credentials
+→ Une page web va s'ouvrir
+→ Connecte-toi avec ton compte Google Ads
+→ Approuve
+→ Reviens au terminal → Terminé! ✅
+
+───────────────────────────────────────────────────────────────
+ÉTAPE 3: Configuration AUTOMATIQUE de Claude Desktop
+───────────────────────────────────────────────────────────────
+
+npm run build
+./scripts/configure-claude-desktop.sh
+
+✅ Tout est configuré automatiquement!
+
+───────────────────────────────────────────────────────────────
+ÉTAPE 4: Redémarrer Claude Desktop
+───────────────────────────────────────────────────────────────
+
+1. Ferme COMPLÈTEMENT Claude Desktop (Quit/Quitter)
+2. Rouvre Claude Desktop
+3. Regarde en bas à droite → Icône 🔌 "google-ads"
+
+───────────────────────────────────────────────────────────────
+TESTER
+───────────────────────────────────────────────────────────────
+
+Dans Claude Desktop, tape:
+
+   "Show me all my Google Ads campaigns"
+
+Si tu vois tes campagnes → 🎉 ÇA MARCHE!
+
+───────────────────────────────────────────────────────────────
+TOUT EN UNE SEULE COMMANDE (après avoir obtenu les credentials)
+───────────────────────────────────────────────────────────────
+
+npm install && npm run setup:all
+
+Puis redémarre Claude Desktop.
+
+═══════════════════════════════════════════════════════════════
+
+📖 Besoin d'aide?
+   - Guide complet: GUIDE-FRANCAIS.md
+   - Démarrage rapide: DEMARRAGE-RAPIDE.md
+   - Exemples: EXAMPLES.md
+
+🐛 Problèmes?
+   - Vérifie que Node.js est installé: node --version
+   - Vérifie que npm est installé: npm --version
+   - Vérifie ton .env: cat .env
+   - Teste le serveur: node dist/index.js
+
+═══════════════════════════════════════════════════════════════
