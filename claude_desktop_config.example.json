@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "google-ads": {
+      "command": "node",
+      "args": ["/home/user/lezardoloris/dist/index.js"],
+      "env": {
+        "GOOGLE_ADS_DEVELOPER_TOKEN": "ton_developer_token_ici",
+        "GOOGLE_ADS_CLIENT_ID": "123456789-abcdefghijk.apps.googleusercontent.com",
+        "GOOGLE_ADS_CLIENT_SECRET": "GOCSPX-abcdefghijklmnop",
+        "GOOGLE_ADS_REFRESH_TOKEN": "1//abcdefghijklmnop-qrstuvwxyz",
+        "GOOGLE_ADS_CUSTOMER_ID": "1234567890"
+      }
+    }
+  }
+}

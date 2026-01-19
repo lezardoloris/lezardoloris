@@ -12,7 +12,9 @@
     "start": "node dist/index.js",
     "dev": "tsx src/index.ts",
     "watch": "tsc --watch",
-    "setup:auth": "tsx scripts/setup-oauth.ts"
+    "setup:auth": "tsx scripts/setup-oauth.ts",
+    "setup:claude": "./scripts/configure-claude-desktop.sh",
+    "setup:all": "npm run setup:auth && npm run build && npm run setup:claude"
   },
   "keywords": [
     "mcp",
